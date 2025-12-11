@@ -139,7 +139,7 @@ Edit `frontend/src/constants.ts`:
 
 ```typescript
 export const PACKAGE_ID = "0x...<YOUR_PACKAGE_ID>";
-export const MODULE_NAME = "lucky_bounty";
+export const MODULE_NAME = "delivery_verifycation";
 export const NETWORK = "testnet";
 ```
 
