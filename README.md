@@ -97,6 +97,8 @@ verify-delivery-system/
 │
 ├── public/                 # Static assets
 │
+├── types/delivery.ts
+|
 ├── package.json
 └── README.md
 ```
