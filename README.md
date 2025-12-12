@@ -70,37 +70,38 @@ This project employs several advanced patterns suitable for scalable dApp develo
 ```string
 verify-delivery-system/
 │
-├── app/
-|   ├── favicon.ico
-|   ├── globals.css
-|   ├── layout.tsx
-|   ├── page.tsx
-|   └── providers.tsx
+├── app/                                 # Next.js App Router source
+│   ├── favicon.ico                      # Browser favicon
+│   ├── globals.css                      # Global CSS styles
+│   ├── layout.tsx                       # Root layout wrapper (Providers + Theme)
+│   ├── page.tsx                         # Main homepage UI
+│   └── providers.tsx                    # Global providers for App Router
 │
-├──components/
-|   ├── CreateOrder.tsx
-|   ├── DeliveryVerificationSystem.tsx
-|   ├── Header.tsx
-|   ├── OrderCard.tsx
-|   ├── OrderList.tsx
-|   ├── Provider.tsx
-|   ├── sample.tsx
-|   └── WalletConnect.tsx
+├── components/                          # Reusable UI components
+│   ├── CreateOrder.tsx                  # Form to create a new delivery order
+│   ├── DeliveryVerificationSystem.tsx   # Main container for verification workflow
+│   ├── Header.tsx                       # Page header + wallet connect button
+│   ├── OrderCard.tsx                    # UI card displaying a single order
+│   ├── OrderList.tsx                    # List of all on-chain orders
+│   ├── Provider.tsx                     # Global providers (Wallet, Query client, etc.)
+│   ├── sample.tsx                       # Sample/test component
+│   └── WalletConnect.tsx                # IOTA wallet connect UI
 │
-├── hooks/
-│   └── useContract.ts
+├── hooks/                               # Custom React hooks
+│   └── useContract.ts                   # Smart contract interaction hook (Move + IOTA)
 │
-├── contract/
+├── contract/                            # Move smart contract
 │   ├── sources/
-│   │   └── delivery_verification.move
-│   └── Move.toml
+│   │   └── delivery_verification.move   # Smart contract logic (Order creation + verification)
+│   └── Move.toml                        # Move package configuration
 │
-├── public/                 # Static assets
+├── public/                              # Static assets (images, logos, etc.)
 │
-├── types/delivery.ts
-|
-├── package.json
-└── README.md
+├── types/
+│   └── delivery.ts                      # TypeScript type definitions for Order/Status
+│
+├── package.json                         # Dependencies, scripts, project metadata
+└── README.md                            # Project documentation
 ```
 
 ## Installation & Setup
