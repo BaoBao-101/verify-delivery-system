@@ -125,10 +125,9 @@ iota move publish --gas-budget 100000000
 
 ### 2. Frontend Setup
 
-Navigate to the frontend directory, install dependencies, and start the development server.
+Navigate to the project directory, install dependencies, and start the development server.
 
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
@@ -137,7 +136,7 @@ npm run dev
 
 After deploying the contract, update the frontend configuration to point to your new package.
 
-Edit `frontend/src/constants.ts`:
+Edit `hooks/useContract.ts`:
 
 ```typescript
 export const PACKAGE_ID = "0x0932c3c2f94c8a3aff78b581a87529e5ac6850fc73bd019a63e7b39b17e269fb";
@@ -147,7 +146,7 @@ export const NETWORK = "testnet";
 
 ## Smart Contract API
 
-The `lucky_bounty` module exposes the following entry functions:
+The `delivery_verifycation` module exposes the following entry functions:
 
 | Function          | Description                                                                           |
 | :---------------- | :------------------------------------------------------------------------------------ |
