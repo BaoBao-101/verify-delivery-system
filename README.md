@@ -117,7 +117,7 @@ verify-delivery-system/
 Navigate to the move directory and publish the package to the IOTA Testnet.
 
 ```bash
-cd move
+cd contract/sources/
 iota move build
 iota move publish --gas-budget 100000000
 ```
