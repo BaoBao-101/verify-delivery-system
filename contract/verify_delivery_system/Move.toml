@@ -1,1 +1,9 @@
+[package]
+name = "delivery_verification"
+version = "0.0.1"
 
+[dependencies]
+Iota = { git = "https://github.com/iotaledger/iota.git", subdir = "crates/iota-framework/packages/iota-framework", rev = "framework/testnet" }
+
+[addresses]
+delivery_verification = "0x0"
